@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+.animate-slideRightToLeft {
+    display: inline-block;
+    animation: slideRightToLeft 15s linear infinite;
+}
