@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="App bg-gradient-to-r from-purple-600 via-indigo-500 to-purple-400">
+    <div className="App bg-gradient-to-r from-red-200 via-red-100 to-red-50">
       <Navbar />
       <TextSlider />
       <About />

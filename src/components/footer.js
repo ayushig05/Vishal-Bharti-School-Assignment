@@ -30,24 +30,24 @@ const Footer = () => {
         <div className="flex justify-center space-x-6 text-lg">
           <a
             href="#"
-            className="text-slate-700 hover:text-white transition duration-300"
+            className="text-slate-600 hover:text-black transition duration-300"
             aria-label="Facebook"
           >
-            <FaFacebook />
+            <FaFacebook size={25}/>
           </a>
           <a
             href="#"
-            className="text-slate-700 hover:text-white transition duration-300"
+            className="text-slate-600 hover:text-black transition duration-300"
             aria-label="Twitter"
           >
-            <FaTwitter />
+            <FaTwitter size={25}/>
           </a>
           <a
             href="#"
-            className="text-slate-700 hover:text-white transition duration-300"
+            className="text-slate-600 hover:text-black transition duration-300"
             aria-label="Instagram"
           >
-            <FaInstagram />
+            <FaInstagram size={25}/>
           </a>
         </div>
 

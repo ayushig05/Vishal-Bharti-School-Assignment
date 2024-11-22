@@ -30,7 +30,7 @@ function About() {
               Our teachers are dedicated to fostering a supportive and inclusive learning environment, where students are encouraged to explore new ideas and take risks. We offer a wide range of academic and extracurricular programmes that enable our students to build a strong foundation for success.
             </p>
 
-            <button className="bg-slate-300 text-slate-800 font-semibold text-md py-2 px-6 rounded-xl shadow-md hover:bg-indigo-100 hover:shadow-lg transition duration-300">
+            <button className="bg-red-200 text-slate-800 font-semibold text-md py-2 px-6 rounded-xl shadow-xl hover:bg-red-100 hover:shadow-lg transition duration-300">
               Learn More
             </button>
           </div>

@@ -7,7 +7,7 @@ const TextSlider = () => {
 
   return (
     <div className="relative w-full mx-auto text-center">
-      <div className="text-3xl font-semibold text-black bg-slate-300 py-5 shadow-md overflow-hidden">
+      <div className="text-3xl font-semibold text-black bg-slate-50 py-5 shadow-md overflow-hidden">
         <p className="animate-slideRightToLeft">{slides[0]}</p>
       </div>
     </div>

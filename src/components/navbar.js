@@ -1,8 +1,4 @@
-import React from "react";
-import { 
-    useEffect, 
-    useState 
-} from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const menuItems = [
@@ -59,9 +55,9 @@ const Navbar = () => {
 
   const toggleDropdown = (index) => {
     if (openMenu === index) {
-      setOpenMenu(null); 
+      setOpenMenu(null);
     } else {
-      setOpenMenu(index); 
+      setOpenMenu(index);
     }
   };
 
@@ -70,7 +66,7 @@ const Navbar = () => {
       if (event.target.closest('.navbar')) {
         return;
       }
-      setOpenMenu(null); 
+      setOpenMenu(null);
     };
 
     document.addEventListener("click", handleClickOutside);
@@ -80,12 +76,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar h-16 flex justify-center items-center">
+    <div className="navbar sticky top-0 bg-gradient-to-r from-red-200 via-red-100 to-red-50 shadow-lg z-50 h-16 flex justify-center items-center">
       <ul className="flex space-x-8">
         <li className="font-semibold">
           <a
             href="/"
-            className="text-gray-800 hover:text-white duration-300"
+            className="text-gray-700 text-lg hover:text-black duration-300"
           >
             Home
           </a>
@@ -95,7 +91,7 @@ const Navbar = () => {
           <li key={index} className="relative">
             <button
               onClick={() => toggleDropdown(index)}
-              className="font-semibold text-gray-800 hover:text-white duration-300 flex items-center"
+              className="font-semibold text-gray-700 text-lg hover:text-black duration-300 flex items-center"
             >
               {menu.name}
               <svg
@@ -115,12 +111,12 @@ const Navbar = () => {
             </button>
 
             {openMenu === index && (
-              <ul className="absolute left-0 mt-2 w-48 bg-indigo-400 text-gray-800 rounded-lg shadow-lg z-10">
+              <ul className="absolute left-0 mt-2 w-48 bg-red-50 text-gray-800 rounded-lg shadow-lg z-10">
                 {menu.dropdown.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.link}
-                      className="block px-4 py-2 hover:bg-indigo-700"
+                      className="block px-4 py-2 hover:bg-red-200"
                     >
                       {item.name}
                     </a>
@@ -134,7 +130,7 @@ const Navbar = () => {
         <li className="font-semibold">
           <a
             href="/"
-            className="text-gray-800 hover:text-white duration-300"
+            className="text-gray-700 text-lg hover:text-black duration-300"
           >
             Contact Us
           </a>
